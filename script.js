@@ -1,3 +1,4 @@
+// header sticky
 $(window).scroll(function() {
     if ($(this).scrollTop() > 0) {
         $("header").addClass("sticky");
@@ -5,7 +6,7 @@ $(window).scroll(function() {
         $("header").removeClass("sticky");
     }
 });
-
+// button Up
 $('body').append('<div class="upbtn"></div>');
 $(window).scroll(function() {
     if ($(this).scrollTop() > 400) {
@@ -24,7 +25,7 @@ $('.upbtn').on('click', function() {
     }, 500);
     return false;
 });
-
+// add dynamically html
 function windowSize() {
     if ($(window).width() <= '601') {
         $('.menu__box').append('<li><div class="menu-phone visual"><a href="tel:+375115555555" target="_blank" title="Звоните!">+375 11 555-55-55</a><a href="tel:+375115555555" target="_blank" title="Звоните!">+375 11 555-55-55</a></div></li>');
@@ -39,6 +40,7 @@ function windowSize2() {
 }
 $(window).load(windowSize2);
 
+// accordeon
 $(document).ready(function() {
     $(".accordeon").find("dd:last").show();
 });
