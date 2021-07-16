@@ -326,14 +326,22 @@
             <h4 class="contact-form-title">Заполните форму и закажите бесплатную консультацию</h4>
             <span><a href="#" class="close">&#10006;</a></span>
             <div class="contact-form-wrapper">
-                <input name="name" type="text" class="input-name" maxlength="12" placeholder="Имя" required>
-                <p class="contact-form-errors"><span></span></p>
+                <input name="name" type="text" class="input-name" minlength="1" maxlength="12" placeholder="Имя" required>
             </div>
             <div class="contact-form-wrapper">
-                <input name="tel" type="tel" class="input-tel" placeholder="Телефон" required>
-                <p class="contact-form-errors"><span></span></p>
+                <input name="tel" type="tel" class="input-tel" minlength="17" placeholder="Телефон" required>
             </div>
             <button class="contact-form-button" type="submit">Заказать консультацию</button>
+        </form>
+    </div>
+    <!-- =============== pop-up   ===============-->
+    <div class="modal-testimonial">
+        <form class="testimonial-form" id="testimonial-form">
+            <span><a href="#" class="close testimonial">&#10006;</a></span>
+            <div class="testimonial-form-desc">
+                <h4 class="testimonial-form-title">Спасибо!</h4>
+                <p class="testimonial-form-p">Скоро с вами свяжется консультант для уточнения деталей</p>
+            </div>
         </form>
     </div>
 </body>

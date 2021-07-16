@@ -54,6 +54,26 @@ $(document).ready(function() {
     $('.close').click(function() {
         $('.contact-form').hide();
         $('.modal').hide();
+        $('.modal-testimonial').hide();
 
+    });
+    $('.modal form').submit(function() {
+        var name = $(this).find('input[name="name"]').val();
+        var tel = $(this).find('input[name="tel"]').val();
+        $.ajax({
+            url: "",
+            type: "post",
+            dataType: "json",
+            data: {
+                "name": name,
+                "tel": tel
+            },
+            success: function(data) {}
+        });
+        $('.contact-form').hide();
+        setTimeout(function() {
+            $('.modal-testimonial').show();
+        }, 1000);
+        return false;
     });
 })
