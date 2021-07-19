@@ -77,3 +77,16 @@ $(document).ready(function() {
         return false;
     });
 });
+
+$(function() {
+    $('.input-tel').mask('+375(00)000-00-00');
+});
+
+function countChar(val) {
+    const maxCount = 12;
+    let len = maxCount - val.value.length;
+    $('#charNum').text(`Осталось ${len} знаков`);
+    if (val.value.length < 1) {
+        $('#charNum').text('');
+    }
+};

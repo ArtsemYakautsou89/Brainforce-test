@@ -315,18 +315,14 @@
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
     <script src="script.js"></script>
-    <script>
-        $(function() {
-            $('.input-tel').mask('+375(00)000-00-00');
-        });
-    </script>
     <!-- =============== pop-up  ===============-->
     <div class="modal">
         <form class="contact-form" id="contact-form">
             <h4 class="contact-form-title">Заполните форму и закажите бесплатную консультацию</h4>
             <span><a href="#" class="close">&#10006;</a></span>
             <div class="contact-form-wrapper">
-                <input name="name" type="text" class="input-name" minlength="1" maxlength="12" placeholder="Имя" required>
+                <input onkeyup="countChar(this)" name="name" type="text" class="input-name" minlength="1" maxlength="12" placeholder="Имя" required>
+                <div id="charNum"></div>
             </div>
             <div class="contact-form-wrapper">
                 <input name="tel" type="tel" class="input-tel" minlength="17" placeholder="Телефон" required>

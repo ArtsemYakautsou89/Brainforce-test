@@ -221,8 +221,7 @@ input {
     transition: width 0.3s ease-out;
 }
 
-.footer-nav>ul>li>a:hover::after,
-.menu-phone>a:hover:after {
+.footer-nav>ul>li>a:hover::after {
     width: 80%;
 }
 
@@ -231,7 +230,8 @@ input {
 }
 
 .footer-info-phone>a:hover::after,
-.menu-nav-ul>li>a:hover:after {
+.menu-nav-ul>li>a:hover:after,
+.menu-phone>a:hover:after {
     width: 90%;
 }
 
@@ -279,8 +279,8 @@ input {
 }
 
 .menu-search-input:focus {
-    background-color: #FFDB2D;
-    border-radius: 8px;
+    background-color: #FFE568;
+    border-radius: 5px;
     font-size: 15px;
     line-height: 19px;
     letter-spacing: 0.02em;
@@ -876,6 +876,11 @@ footer>div {
     cursor: auto;
 }
 
+.contact-form-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
 .contact-form-wrapper>input {
     background: #F4F4F4;
     border: 1px solid #828282;
@@ -928,8 +933,7 @@ input:focus:invalid {
 }
 
 input:focus:valid {
-    border: 1px solid #333333;
-    color: #333333;
+    border: none;
 }
 
 .contact-form-errors {
@@ -1036,6 +1040,14 @@ input:focus:valid {
 .testimonial {
     top: 12px;
     right: 19px;
+}
+
+#charNum {
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: right;
+    color: #219653;
 }
 
 
