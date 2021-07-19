@@ -827,13 +827,10 @@ footer>div {
 }
 
 .modal>form {
-    background: #fff;
     -webkit-animation: maximize 500ms linear;
     -webkit-box-shadow: 0 3px 20px rgb(0 0 0 / 90%);
     -moz-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.9);
     box-shadow: 0 3px 20px rgb(0 0 0 / 90%);
-    background: -moz-linear-gradient(#fff, #ccc);
-    background: -webkit-gradient(linear, right bottom, right top, color-stop(1, rgb(255, 255, 255)), color-stop(0.57, rgb(230, 230, 230)));
     text-shadow: 0 1px 0 #fff;
 }
 
